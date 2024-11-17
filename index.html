@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro Juego - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Css/styles.css">
+</head>
+
+<body>
+    <header class="bg-dark text-white p-3 text-center">
+        <h1>Libro Juego: Elige tu propia aventura</h1>
+    </header>
+    <main class="container mt-4">
+        <section class="mb-5">
+            <h2>Bienvenido/a</h2>
+            <p>Sumérgete en una historia donde tus decisiones determinan el destino del protagonista. ¿Estás listo para
+                empezar?</p>
+        </section>
+        <section id="login-section" class="mb-5">
+            <h3>Login</h3>
+            <form id="loginForm" action="admin.html" method="get">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Usuario</label>
+                    <input type="text" id="username" class="form-control" placeholder="Ingresa tu usuario">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" id="password" class="form-control" placeholder="Ingresa tu contraseña">
+                </div>
+                <button type="button" class="btn btn-primary" onclick="login()">Iniciar Sesión</button>
+                <p id="login-error" class="text-danger mt-2 d-none">Usuario o contraseña incorrectos.</p>
+            </form>
+        </section>
+        <section id="start-section" class="mb-5">
+            <h3>Comienza tu historia</h3>
+            <div class="botonVerde">
+                <a href="librojuego.html" class="btn btn-success">¡Comenzar ahora!</a>
+            </div>
+        </section>
+        <section id="scores-section">
+            <h3>Puntajes más altos</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Puntaje</th>
+                        <th>País</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>1500</td>
+                        <td>Argentina</td>
+                    </tr>
+                    <tr>
+                        <td>Laura García</td>
+                        <td>1450</td>
+                        <td>España</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2024 Libro Juego. Creado Por: Pablo Martin Gomez. Todos los derechos reservados.</p>
+    </footer>
+    <script src="Multimedia/Js/scripts.js"></script>
+</body>
+
+</html>
